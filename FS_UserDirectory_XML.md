@@ -195,8 +195,8 @@ domain_name = params:getHeader("domain")
 event_calling_func = params:getHeader("Event-Calling-Function")
 
 -- Get database connection handl3e
-db = freeswitch.Dbh("odbc://freeswitch:freeswitch:freeswitch!")
--- db = freeswitch.Dbh("pgsql://hostaddr=127.0.0.1 dbname=freeswitch user=freeswitch password='freeswitch!' options='-c client_min_messages=NOTICE' application_name='freeswitch'")
+db = freeswitch.Dbh("odbc://database:username:password")
+-- db = freeswitch.Dbh("pgsql://hostaddr=127.0.0.1 dbname=databasename user=username password='password' options='-c client_min_messages=NOTICE' application_name='FreeSWITCH'")
 -- check if we are connected to the database
 assert(db:connected())
 
