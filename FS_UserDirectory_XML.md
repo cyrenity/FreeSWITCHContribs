@@ -12,9 +12,8 @@ Basic syntax validation of JSON document is done by PostgreSQL server itself, ho
 
 Make sure following requirements are already met
 
-*   Host is running Ubuntu 18.04 LTS
-*   FreeSWITCH 1.8 or above is already installed, (mod\_lua is loaded)
-*   Core (switch.conf.xml) and internal sip profile (sip\_profiles/internal.xml) db is already set to ODBC DSN
+*   FreeSWITCH 1.8 or above is already installed, (mod_lua is loaded)
+*   Core (switch.conf.xml) and internal sip profile (sip_profiles/internal.xml) db is already set to ODBC DSN
 *   PostgreSQL server  is installed and running
 
 ## Installation Steps
